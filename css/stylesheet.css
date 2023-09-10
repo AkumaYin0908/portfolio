@@ -1,0 +1,217 @@
+
+body{
+    background-color: #0AA1DD;
+    color:#E8F9FD;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans",sans-serif;
+}
+
+
+
+ .container-fluid{
+    padding: 5% 10%;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    
+    backdrop-filter: blur(8px)!important;
+    background-color: rgba(33, 85, 205,0.7) !important;
+    box-shadow: 0 10px 10px 0 rgba(24, 24, 26, 0.171)!important;
+}
+.navbar-brand{
+    margin-left: 10% !important;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.navbar-toggler{
+    margin-right: 10% !important;
+}
+
+.navbar-nav{
+    padding-left: 60%;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+}
+
+.navbar-brand-logo{
+    width: 32px;
+    height: 32px;
+}
+
+#navigation .container-fluid{
+  padding: 0;
+ 
+  
+}
+
+
+/* Home */
+ #home{
+    background-color: #2155CD;  
+} 
+
+/* Introduction and Profile */
+.hello{
+    font-weight: 900;
+}
+
+
+.intro{
+    padding: 15% 7%;
+}
+
+.short-intro{
+    padding: 3% 0;
+    font-size: 1.5rem;
+    line-height: 2;
+
+
+}
+
+.profile{
+    position: relative;
+    margin: 5% 0;
+    padding: 25% 3%;
+    text-align: center;
+}
+.profile-pic{
+    background-color: rgba(10, 12, 18, 1);
+    border-radius: 2%;
+    width: 40%;
+}
+
+.position-title{
+    padding: 2rem 0;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.intro-text-spacing{
+    padding: .5rem 0;
+}
+.full-name{
+    font-family: "JetBrains Mono",monospace;
+    font-weight: 700;
+    color:#79DAE8;
+}
+
+.resume-btn{
+    font-family: "JetBrains Mono",monospace;
+    font-weight: 700;
+    margin-top: 3%;
+    color: #79DAE8;
+    border-color: rgba(121, 218, 232,0.5);
+    width: 40% !important;
+    height: 2.5rem !important;
+    display: block;
+    position: absolute;
+    left: 30%;
+
+    
+}
+
+.file-icon{
+    margin: 0 3%;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+:root {
+	--d: 5000ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(10, 161, 221, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.box {
+	border: 0.3rem solid;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 450deg;
+	}
+}
+
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+/* About Me */
+.about-title{
+    font-weight: 900;
+    text-align: center;
+}
