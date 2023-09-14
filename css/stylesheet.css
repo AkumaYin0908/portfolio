@@ -9,7 +9,9 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Open Sans",sans-serif;
 }
 
-
+p{
+    font-family: "Open Sans",sans-serif;
+}
 
  .container-fluid{
     padding: 5% 10%;
@@ -214,4 +216,25 @@ h1, h2, h3, h4, h5, h6{
 .about-title{
     font-weight: 900;
     text-align: center;
+}
+
+#about-me .container-fluid{
+    padding: 10%;
+}
+
+.about-description{
+    padding: 3% 15%;
+    font-size: 1.5rem;
+    line-height: 2;
+    text-align:justify;
+}
+.indent{
+    margin-left: 20px;
+}
+
+.myname{
+    font-weight: 700;
+    font-size: 2rem;
+    color:#053B50;
+
 }
